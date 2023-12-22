@@ -1,0 +1,70 @@
+<!-- Button trigger modal -->
+<button class="btn btn-primary" (click)="openModal()">
+    <i class="bi bi-pencil-square"></i> Modify Product
+</button>
+
+<!-- Modal -->
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display': display}">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h4 class="modal-title">Modify Product</h4>
+                <button type="button" class="btn-close btn-close-white" aria-label="Close" (click)="closeModal"></button>
+            </div>
+            <div class="modal-body">
+                <template *ngTemplateOutlet="formProduct"></template>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+                <button type="submit" class="btn btn-success">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form -->
+<ng-template #formProduct>
+    <form (ngSubmit)="updatearticle()">
+        <div class="mb-3">
+            <label for="reference" class="form-label">Reference:</label>
+            <input type="text" class="form-control" id="reference" name="reference" placeholder="Enter reference"
+                [(ngModel)]="products.reference">
+        </div>
+        <div class="mb-3">
+            <label for="designation" class="form-label">Designation:</label>
+            <input required minlength="4" #designation="ngModel" type="text" class="form-control" id="designation"
+                name="designation" placeholder="Enter designation" [(ngModel)]="products.designation">
+            <div *ngIf="designation.invalid && (designation.dirty || designation.touched)" class="alert alert-danger">
+                <div *ngIf="designation.errors?.['required']">Please enter the designation.</div>
+                <div *ngIf="designation.errors?.['minlength']">Designation must have at least 4 characters.</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="prix" class="form-label">Price:</label>
+            <input type="number" class="form-control" id="prix" name="prix" placeholder="Enter price"
+                [(ngModel)]="products.prix">
+        </div>
+        <div class="mb-3">
+            <label for="qtestock" class="form-label">Quantity in Stock:</label>
+            <input type="text" class="form-control" id="qtestock" name="qtestock" placeholder="Enter quantity in stock"
+                [(ngModel)]="products.qtestock">
+        </div>
+        <div class="mb-3">
+            <label for="marque" class="form-label">Brand:</label>
+            <input type="text" class="form-control" id="marque" name="marque" placeholder="Enter brand"
+                [(ngModel)]="products.marque">
+        </div>
+        <div>
+            <file-pond #myPond [options]="pondOptions" [files]="pondFiles">
+            </file-pond>
+        </div>
+        <div class="mb-3">
+            <label for="scategorieID" class="form-label">Category:</label>
+            <select name="scategorieID" class="form-control" [(ngModel)]="products.scategorieID">
+                <option *ngFor="let sd of scategories" value="{{sd._id}}">
+                    {{sd.nomscategorie}}
+                </option>
+            </select>
+        </div>
+    </form>
+</ng-template>

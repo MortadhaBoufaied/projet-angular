@@ -1,0 +1,31 @@
+<!-- app.component.html -->
+
+<div class="container-fluid bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <span id="ssp">E-commerce</span>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-dark me-2" routerLink="/cards">E-commerce Space</a>
+                </li>
+                <li *ngIf="!this.authService.getisLoggedIn()" class="nav-item">
+                    <a class="nav-link btn btn-dark me-2" routerLinkActive="active" routerLink="/login">Sign
+                        in</a>
+                </li>
+            </ul>
+        </div>
+        <button *ngIf="this.authService.getisLoggedIn()" (click)="logout()" type="button" class="btn btn-light">
+            Logout
+        </button>
+    </nav>
+</div>
+
+<div class="container mt-5">
+    <div class="mt-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>

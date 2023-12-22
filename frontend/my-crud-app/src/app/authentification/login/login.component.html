@@ -1,0 +1,94 @@
+<div class="container forms">
+    <!-- Login Form -->
+    <div class="form login form-signin w-50 m-auto">
+        <div class="form-content">
+            <header class="h3 mb-3 font-weight-normal text-center">Login</header>
+            <form (ngSubmit)="loginUser()">
+                <div class="field input-field mb-3">
+                    <input type="text" class="form-control input" id="email" name="email" placeholder="Email" [(ngModel)]="email">
+                </div>
+
+                <div class="field input-field mb-3">
+                    <input type="password" class="form-control password" id="password" name="password" placeholder="Password" [(ngModel)]="password">
+                    <i class='bx bx-hide eye-icon'></i>
+                </div>
+
+                <div class="form-link mb-3">
+                    <a href="#" class="forgot-pass">Forgot password?</a>
+                </div>
+
+                <div class="field button-field d-grid">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+
+            <div class="form-link">
+                <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="media-options">
+            <a href="#" class="field facebook">
+                <i class='bx bxl-facebook facebook-icon'></i>
+                <span id="fbc">Login with Facebook</span>
+            </a>
+        </div>
+
+        <div class="media-options">
+            <a href="#" class="field google">
+                <img src="google.png" alt="" class="google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form signup form-signin w-50 m-auto">
+        <div class="form-content">
+            <header class="h3 mb-3 font-weight-normal text-center">Signup</header>
+            <form action="#">
+                <div class="field input-field mb-3">
+                    <label>Email</label>
+                    <input type="text" class="form-control input" id="signup-email" placeholder="Email">
+                </div>
+
+                <div class="field input-field mb-3">
+                    <label>Create password</label>
+                    <input type="password" class="form-control password" id="signup-password" placeholder="Create password">
+                </div>
+
+                <div class="field input-field mb-3">
+                    <label>Confirm password</label>
+                    <input type="password" class="form-control password" id="confirm-password" placeholder="Confirm password">
+                    <i class='bx bx-hide eye-icon'></i>
+                </div>
+
+                <div class="field button-field d-grid">
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </div>
+            </form>
+
+            <div class="form-link">
+                <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="media-options">
+            <a href="#" class="field facebook">
+                <i class='bx bxl-facebook facebook-icon'></i>
+                <span>Login with Facebook</span>
+            </a>
+        </div>
+
+        <div class="media-options">
+            <a href="#" class="field google">
+                <img src="images/google.png" alt="" class="google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+    </div>
+</div>

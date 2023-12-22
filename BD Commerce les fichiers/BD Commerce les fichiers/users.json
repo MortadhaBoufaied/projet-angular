@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "650c742ea0ecf6c83c02c928"
+  },
+  "email": "sh@gmail.com",
+  "password": "$2b$10$IuDmVEdzzMTv4Th1xusKTO85jecvfGtA1m3i1jEvXIQURKw/rP4wG",
+  "firstname": "s",
+  "lastname": "h",
+  "role": "user",
+  "isActive": true,
+  "avatar": "https://previews.123rf.com/images/gmast3r/gmast3r1508/gmast3r150800180/44204299-ic%C3%B4ne-de-profil-femme-avatar-portrait-de-femme.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1695314990180"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1695314990180"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "651d4f2a7dd14e3921a8ba44"
+  },
+  "email": "ss@gmail.com",
+  "password": "$2b$10$DBAo6GjbT4bctANENy48leEXwmQlieNw2r5ILxRZvfrfzKUeJNMau",
+  "firstname": "ss",
+  "lastname": "hh",
+  "role": "admin",
+  "isActive": true,
+  "avatar": "image.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1696419626325"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1696419626325"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "651d6031b4355fec3d5d8a73"
+  },
+  "email": "sh@yahoo.fr",
+  "password": "$2b$10$1qCRX6XR8jP4dbNEDZJfT.QC05UgGE4qOOtn5Ths0QvR2.SC6e8HC",
+  "firstname": "S.",
+  "lastname": "H.",
+  "role": "user",
+  "isActive": true,
+  "avatar": "avatar.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1696423985639"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1696423985639"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "651d6af955074d84d7cc627d"
+  },
+  "email": "saha@yahoo.fr",
+  "password": "$2b$10$oyKgN9owXSacFbe8pZehwOyxYyiaDUBHgl0kFHPxlT40NuPcmJWEu",
+  "firstname": "sa",
+  "lastname": "ha",
+  "role": "admin",
+  "isActive": true,
+  "avatar": "https://formationepgv.com/wp-content/uploads/2020/11/avatar-femme-brune.png",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1696426745453"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1696426745453"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "651e6327be4d9264bff8b803"
+  },
+  "email": "sh1@yahoo.fr",
+  "password": "$2b$10$t8Vu/NkqJ9ghJb2V7nVQaO.vt7G2/hc1rfKwoN095BvtBAPyF3z1u",
+  "firstname": "aa",
+  "lastname": "aa",
+  "role": "user",
+  "isActive": true,
+  "avatar": "https://www.osteosmose.fr/wp-content/uploads/2016/08/avatar-femme-3.png",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1696490279681"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1696490279681"
+    }
+  },
+  "__v": 0
+}]

@@ -1,0 +1,35 @@
+<div id="new-arrivals" class="new-arrivals">
+    <div class="container">
+        <div class="section-header">
+            <h2>Products List</h2>
+        </div>
+        <div class="new-arrivals-content">
+            <div class="row card-deck">
+                <div class="col-md-3 col-sm-4" *ngFor="let p of productOrders">
+                    <div class="single-new-arrival">
+                        <div class="single-new-arrival-bg">
+                            <img src="{{p.product.imageart}}" alt="{{p.product.designation}} image">
+                            <div class="single-new-arrival-bg-overlay"></div>
+                            <div class="sale bg-1">
+                                <p>sale</p>
+                            </div>
+                            <div class="new-arrival-cart">
+
+                                <button class="btn btn-primary" (click)="addProductToCart(p)" [disabled]="p.product.qtestock === 0">
+                                    Add To Cart
+                                </button>
+                                
+                                <p class="arrival-review pull-right">
+                                    <span class="lnr lnr-heart"></span>
+                                    <span class="lnr lnr-frame-expand"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <h4><a href="'products/:productId/view'">{{p.product.designation}}</a></h4>
+                        <p class="arrival-product-price">{{p.product.prix}} TND</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

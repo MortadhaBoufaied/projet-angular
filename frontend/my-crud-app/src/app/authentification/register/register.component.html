@@ -1,0 +1,48 @@
+<div class="container forms">
+    <div class="form signup form-signin w-50 m-auto">
+        <div class="form-content">
+            <header class="h3 mb-3 font-weight-normal text-center">Signup</header>
+            <form (ngSubmit)="Ajoutuser($event)">
+                <div class="field input-field mb-3">
+                    <label>Email</label>
+                    <input type="text" class="form-control input" id="signup-email" name="email" placeholder="Email" [(ngModel)]="user.email">
+                </div>
+    
+                <div class="field input-field mb-3">
+                    <label>Create password</label>
+                    <input type="password" class="form-control password" id="signup-password" name="password" placeholder="Create password" [(ngModel)]="user.password">
+                </div>
+    
+                <div class="field input-field mb-3">
+                    <label>Confirm password</label>
+                    <input type="password" class="form-control password" id="confirm-password" placeholder="Confirm password">
+                    <i class='bx bx-hide eye-icon'></i>
+                </div>
+    
+                <div class="field button-field d-grid">
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+    
+            <div class="form-link">
+                <span>Already have an account? <a routerLink="/login" class="link login-link">Login</a></span>
+            </div>
+        </div>
+    
+        <div class="line"></div>
+    
+        <div class="media-options">
+            <a href="#" class="field facebook">
+                <i class='bx bxl-facebook facebook-icon'></i>
+                <span>Login with Facebook</span>
+            </a>
+        </div>
+    
+        <div class="media-options">
+            <a href="#" class="field google">
+                <img src="images/google.png" alt="" class="google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+    </div>    
+</div>

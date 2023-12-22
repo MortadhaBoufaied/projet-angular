@@ -1,0 +1,24 @@
+/* Component-specific styles */
+
+.modal-dialog {
+    max-width: 90%;
+}
+
+.alert {
+    font-size: 14px;
+}
+
+/* Global styles (you can include this in a separate stylesheet) */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Add any additional styles as needed */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 100%;
+    }
+}

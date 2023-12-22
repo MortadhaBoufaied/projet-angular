@@ -1,0 +1,39 @@
+/* index.component.css */
+
+.container {
+    padding: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    flex-grow: 1;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .img-thumbnail {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #ddd; /* Add border for a neat appearance */
+    border-radius: 4px; /* Add border-radius for a rounded corner */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+  }
+  
+  .action-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action-buttons button {
+    margin-left: 10px;
+  }
+  
+  /* Add any additional styling as needed */
+  
